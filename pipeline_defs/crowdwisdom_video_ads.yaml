@@ -1,0 +1,34 @@
+name: crowdwisdom-video-ads
+version: 1
+objective: Generate a cinematic 30-60 second CrowdWisdomTrading ad.
+stages:
+  - id: ads_manager
+    profile: ads-manager
+    output: data/ads/successful_ads.json
+  - id: marketing_analysis
+    profile: marketing-analyzer
+    input: data/ads/successful_ads.json
+    output: data/research/marketing_analysis.json
+  - id: recent_research
+    profile: research-agent
+    input: data/research/marketing_analysis.json
+    output: data/research/research.json
+  - id: scripts
+    profile: script-agent
+    inputs:
+      - data/ads/successful_ads.json
+      - data/research/marketing_analysis.json
+      - data/research/research.json
+    outputs:
+      - data/scripts/ad_script_01.json
+      - data/scripts/ad_script_02.json
+      - data/scripts/ad_script_03.json
+  - id: video
+    profile: video-agent
+    input: data/scripts/ad_script_01.json
+    output: output/final_ad.mp4
+quality_gates:
+  - ad duration between 30 and 60 seconds
+  - no guaranteed returns
+  - dated research limited to 30 days
+  - final output is video, not a static text ad

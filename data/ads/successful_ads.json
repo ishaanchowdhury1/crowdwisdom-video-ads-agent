@@ -1,0 +1,36 @@
+{
+  "research_window_days": 30,
+  "source": "fixture_demo",
+  "ads": [
+    {
+      "advertiser": "Trading research brand A",
+      "ad_id": "fixture-001",
+      "media_type": "video",
+      "hook": "Stop listening to ten traders at once.",
+      "pain_point": "conflicting opinions",
+      "ICP": "active retail trader",
+      "creative_pattern": "rapid contradictory headlines → silence → one clear framework",
+      "creative_score": 9.1
+    },
+    {
+      "advertiser": "Trading education brand B",
+      "ad_id": "fixture-002",
+      "media_type": "video",
+      "hook": "Your feed is not a strategy.",
+      "pain_point": "research overload",
+      "ICP": "swing trader",
+      "creative_pattern": "scrolling montage → time pressure → simplified decision workflow",
+      "creative_score": 8.8
+    },
+    {
+      "advertiser": "Market intelligence brand C",
+      "ad_id": "fixture-003",
+      "media_type": "video",
+      "hook": "What changes when more informed voices agree?",
+      "pain_point": "lack of confidence",
+      "ICP": "active investor",
+      "creative_pattern": "many signals converge into a single visual",
+      "creative_score": 8.7
+    }
+  ]
+}

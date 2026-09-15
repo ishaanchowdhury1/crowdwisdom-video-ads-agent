@@ -1,0 +1,17 @@
+{
+  "research_window_days": 30,
+  "source": "fixture_demo",
+  "findings": [
+    {
+      "topic": "research overload",
+      "evidence": "Retail traders routinely face large volumes of fragmented commentary across social platforms and financial media.",
+      "confidence": "medium"
+    },
+    {
+      "topic": "decision uncertainty",
+      "evidence": "Conflicting opinions create a need for structured comparison and risk framing.",
+      "confidence": "medium"
+    }
+  ],
+  "note": "Demo fixture only. Live mode must replace this with dated Tavily/Exa results from the last 30 days."
+}
